@@ -1,0 +1,71 @@
+<!-- <!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gap Misol</title>
+  <style>
+    .container {
+      display: flex;
+      gap: 100px;
+    }
+
+    .item {
+      background-color: lightcoral;
+      padding: 30px;
+      color: white;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="item">Element 1</div>
+    <div class="item">Element 2</div>
+    <div class="item">Element 3</div>
+  </div>
+</body>
+</html> -->
+<header class="py-5 border-gray-300 bg-gray-100 border-b sticky z-50 top-0">
+  <div class="container mx-auto px-6">
+      <div class="flex justify-between items-center">
+          <!-- Logo -->
+          <a href="#">
+              <img src="./images/Logo.svg" alt="Logo">
+          </a>
+
+          <!-- Desktop Menu -->
+          <nav class="hidden lg:flex items-center gap-8">
+              <a href="#home" class="nav__link hover:text-blue-500">Início</a>
+              <a href="#about" class="nav__link hover:text-blue-500">Sobre</a>
+              <a href="#services" class="nav__link hover:text-blue-500">Serviços</a>
+              <a href="#clients" class="nav__link hover:text-blue-500">Depoimentos</a>
+              <a href="#contact" class="nav__link hover:text-blue-500">Contato</a>
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <div class="lg:hidden cursor-pointer text-primary text-2xl" id="menuButton">
+              <i class="fa-solid fa-bars"></i>
+          </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="lg:hidden hidden mt-4 space-y-4">
+          <a href="#home" class="block text-lg hover:text-blue-500">Início</a>
+          <a href="#about" class="block text-lg hover:text-blue-500">Sobre</a>
+          <a href="#services" class="block text-lg hover:text-blue-500">Serviços</a>
+          <a href="#clients" class="block text-lg hover:text-blue-500">Depoimentos</a>
+          <a href="#contact" class="block text-lg hover:text-blue-500">Contato</a>
+      </div>
+  </div>
+</header>
+
+<script>
+  const menuButton = document.getElementById('menuButton');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+  });
+</script>
